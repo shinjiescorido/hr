@@ -1,0 +1,68 @@
+<strong>You are currently viewing the Pay Period of March 16 to March 31, 2013.</strong>
+
+<p>The current Pay Persiod for computation March 16 to March 31,2013.</p>
+<p>Payroll has been generated for this period and has been released.</p>
+
+<p>To view the past Payroll Information <a href="#">click here.</a></p>
+<h3>Pasig</h3>
+<hr>
+<table class="table table-bordered">
+	<thead>
+		<tr class="active">
+			<th></th>
+			<th>Name</th>
+			<th>Gross Pay</th>
+			<th>Deductions</th>
+			<th>Miscellaneous</th>
+			<th>Net Pay</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+		<tbody ng-repeat="pay in payroll.getPasig()">
+			<tr ng-include="template" class="{{pay.success}}">
+
+
+			</tr>
+		</tbody>
+</table>
+<h3>Operations</h3>
+<hr />
+<table class="table table-bordered">
+	<thead>
+		<tr class="active">
+			<th></th>
+			<th>Name</th>
+			<th>Gross Pay</th>
+			<th>Deductions</th>
+			<th>Miscellaneous</th>
+			<th>Net Pay</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+		<tbody ng-repeat="pay in payroll.getOperations()">
+			<tr ng-include="template" class="{{pay.success}}">
+
+
+			</tr>
+		</tbody>
+</table>
+<h3>Management</h3>
+<hr />
+<table class="table table-bordered">
+	<thead>
+		<tr class="active">
+			<th></th>
+			<th>Name</th>
+			<th>Gross Pay</th>
+			<th>Deductions</th>
+			<th>Miscellaneous</th>
+			<th>Net Pay</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+		<tbody ng-repeat="pay in payroll.getManagement()">
+			<tr ng-include="template" class="{{pay.success}}">
+
+
+			</tr>
+		</tbody></table>

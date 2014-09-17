@@ -27,6 +27,14 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/shinji', {
+        templateUrl: 'views/shinji.html',
+        controller: 'ShinjiCtrl'
+      })
+      .when('/payroll', {
+        templateUrl: 'views/payroll.html',
+        controller: 'PayrollCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
